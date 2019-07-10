@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.sun.net.httpserver.Authenticator.Result"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="bean.Usuario"/>
+    <fullyQualifiedTypeName name="bean.Categoria"/>
+    <fullyQualifiedTypeName name="dao.UsuarioDao"/>
+    <fullyQualifiedTypeName name="dao.CategoriaDao"/>
+    <fullyQualifiedTypeName name="bean.Cliente"/>
+    <fullyQualifiedTypeName name="bean.Endereco"/>
+    <fullyQualifiedTypeName name="bean.Funcionario"/>
+    <fullyQualifiedTypeName name="bean.Higiene"/>
+    <fullyQualifiedTypeName name="bean.Pet"/>
+    <fullyQualifiedTypeName name="bean.Pedido"/>
+    <fullyQualifiedTypeName name="bean.Alimento"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="bean.Acessorio"/>
+    <fullyQualifiedTypeName name="bean.Saude"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+</qualifiedTypeNameHistroy>

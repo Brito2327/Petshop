@@ -1,0 +1,11 @@
+<%@page import="bean.Higiene" %>
+<%@page import="dao.HigieneDao" %>
+<%@page import="bean.Acessorio" %>
+<%@page import="dao.AcessorioDao" %>
+<%@page import="bean.Alimento" %>
+<%@page import="dao.AlimentoDao" %>
+<%@page import="bean.Saude" %>
+<%@page import="dao.SaudeDao" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+

@@ -1,0 +1,129 @@
+<%@page import="bean.Pedido" %>
+<%@page import="dao.PedidoDao" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Fotorama -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Adicionar arquivo CSS -->
+    <link href="estilosCarrinho.css" rel="stylesheet">
+
+    <!-- Icone -->
+    <link rel="shortcur icon" href="favicon.ico.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header class="menu-principal">
+        
+            <div class="header-1">
+                <div class="logo">
+                    <img src="imagens/Logo.png" />
+                </div>
+                <div class="redes-sociais">
+                </div>
+            </div>
+      
+    </header>
+
+   
+
+
+
+
+
+
+    <!--/header-->
+
+   
+        <div class="container">
+            <div class="breadcrumbs">
+                <ol class="breadcrumb">
+                    <i class="fas fa-shopping-bag"></i>
+                    <li>
+                        <h3>Seu pedido</h3>
+                    </li>
+                </ol>
+            </div>
+            <div class="table-responsive cart_info">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr class="cart_menu">
+                            <td class="description">Produto</td>
+                            <td class="description">valor</td>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cart_product">
+                               <% %>
+                            </td>
+                            
+                            <td class="cart_price">
+                                <p>$59</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    <!--Rodapé-->
+    <footer>
+        <div id="contato" class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="imagens/Logo.png">
+                    <hr class="light-1">
+                    <p>47-3456-9877</p>
+                    <p>pegasus.pet@gmail.com</p>
+                    <p>121, Antônio da Veiga</p>
+                    <p>Blumenau - SC</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light-2">
+                    <h5>Atendimento</h5>
+                    <hr class="light-3">
+                    <p>Segunda à sexta: 24 hrs</p>
+                    <p>Sábados: 8 às 20 hrs</p>
+                    <p>Domingos: Fechado</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light-4">
+                    <h5>Trabalhe conosco</h5>
+                    <hr class="light-5">
+                    <p>Não há vagas disponíveis no momento.</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-6">
+                    <h5>&copy; pegasus.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

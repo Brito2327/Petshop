@@ -1,0 +1,235 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+     <%@ include file="topo.jsp" %>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Higiene Pet</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Fotorama -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Adicionar arquivo CSS -->
+    <link href="estilos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header class="menu-principal">
+       
+            <div class="header-1">
+                <div class="logo">
+                    <img src="imagens/Logo.png" />
+                </div>
+                <div class="redes-sociais">
+                </div>
+            </div>
+        
+    </header>
+
+    
+
+    <!-- Banner -->
+    <section class="fotorama" data-width="100%" data-loop="true" data-autoplay="2500" data-stopautoplayontouch="false"
+        data-transition="crossfade">
+        <img src="imagens/img1.jpg">
+        <img src="imagens/img2.jpg">
+        <img src="imagens/img3.jpg">
+    </section>
+
+    <!-- Título de produto 1 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Banho e Tosa</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Shampoo1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Perfume Four Paws Intenso Ouro</h5>
+                <p class="font-weight-bold">Marca: Chalesco.</p>
+                <p>- Indicado para cães e gatos.
+                    <br>- Proporciona uma ótima fixação.
+                    <br>- Mantém o pet cheiroso.
+                    <br>- Duração de até 24 horas.
+                </p>
+                <br>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$79,99</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Shampoo2-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Shampoo Avert Noxxi Control </h5>
+                <p class="font-weight-bold">Marca: Avert.</p>
+                <p class="card-text">- Indicado para cães e gatos.
+                    <br>- Ideal para pets com pré-disposição a problemas dermatológicos.
+                    <br>- Equilibra a saúde da pele e dos pelos.
+                    <br>- Remove o excesso de oleosidade da pele sem ressecar.
+                    <br>- Disponível em embalagem de 200ml.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$2,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/MáquinaDeTosa-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Máquina de tosa Smart Trim</h5>
+                <p class="font-weight-bold">Marca: Wahl Clipper</p>
+                <p class="card-text">- Indicado para cães e gatos.
+                    <br>- Perfeita para dar retoques no visual do seu pet.
+                    <br>- Fácil de manusear e equipada com: 01 trimmer, 04 pentes, 
+                    um óleo lubrificante e um carregador bivolt (110V e 220V).
+                    <br>- Possui 2 anos de garantia do fabricante.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$359,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Título de produto 2 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Outros</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Tapete1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Banheiro Pet Park</h5>
+                <p class="font-weight-bold">Marca: Chalesco.</p>
+                <p>- Indicado para cães e gatos.
+                    <br>- Tapete higiênico feito de grama sintética atóxica.
+                    <br>- Possui três camadas protetoras: a grama, onde o seu pet faz suas 
+                    necessidades, a bandeja de elevação e a de coleta.
+                    <br>- Mantém sua casa limpa e livre de maus odores.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$179,90</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Fralda-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Fralda Higiênica</h5>
+                <p class="font-weight-bold">Marca: Dog's Care.</p>
+                <p class="card-text">- A melhor opção de fraldas para o seu cão fêmea é a Fralda Higiênica Dog's 
+                    Care Cães Fêmeas.Com uma manta superabsorvente com gel em flocos 
+                    que garantem até 6 horas de absorção. Indicado para cães com incontinência urinária, 
+                    pós-operatório, passeios e viagens longas e demarcação de território.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$22,39</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Lençoumedecido-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Tapete Higiênico Super Premium</h5>
+                <p class="font-weight-bold">Marca: Petix</p>
+                <p class="card-text">- Indicada para cães.
+                    <br>- Desenvolvido com a maior absorção possível, sem odores fortes e com máxima 
+                    praticidade de limpeza.
+                    <br>- Com os adesivos e as abas, fica muito mais fácil de manusear.
+                    <br>- Possui atrativo canino.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$84,90</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <!--Redes sociais-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Siga nossos perfis</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!--Rodapé-->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="imagens/Logo.png">
+                    <hr class="light-1">
+                    <p>47-3456-9877</p>
+                    <p>pegasus.pet@gmail.com</p>
+                    <p>121, Antônio da Veiga</p>
+                    <p>Blumenau - SC</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light-2">
+                    <h5>Atendimento</h5>
+                    <hr class="light-3">
+                    <p>Segunda à sexta: 24 hrs</p>
+                    <p>Sábados: 8 às 20 hrs</p>
+                    <p>Domingos: Fechado</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light-4">
+                    <h5>Trabalhe conosco</h5>
+                    <hr class="light-5">
+                    <p>Não há vagas disponíveis no momento.</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-6">
+                    <h5>&copy; pegasus.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+
+ALTER TABLE Cliente ADD CONSTRAINT Cliente_fk0 FOREIGN KEY (idPet) REFERENCES Pet(id);
+
+ALTER TABLE Cliente ADD CONSTRAINT Cliente_fk1 FOREIGN KEY (idEndereco) REFERENCES Endereco(id);
+
+ALTER TABLE Cliente ADD CONSTRAINT Cliente_fk2 FOREIGN KEY (idUsuario) REFERENCES Usuario(id);
+
+ALTER TABLE Cliente ADD CONSTRAINT Cliente_fk3 FOREIGN KEY (idPedido) REFERENCES Pedido(id);
+
+ALTER TABLE Pedido ADD CONSTRAINT Pedido_fk0 FOREIGN KEY (idAlimentoPedido) REFERENCES AlimentoPedido(id);
+
+ALTER TABLE Pedido ADD CONSTRAINT Pedido_fk1 FOREIGN KEY (idAcessorioPedido) REFERENCES AcessorioPedido(id);
+
+ALTER TABLE Pedido ADD CONSTRAINT Pedido_fk2 FOREIGN KEY (idSaudePedido) REFERENCES SaudePedido(id);
+
+ALTER TABLE Pedido ADD CONSTRAINT Pedido_fk3 FOREIGN KEY (idHigienePdido) REFERENCES HigienePedido(id);
+
+ALTER TABLE Pedido ADD CONSTRAINT Pedido_fk4 FOREIGN KEY (idServico) REFERENCES Servico(id);
+
+ALTER TABLE Pedido ADD CONSTRAINT Pedido_fk5 FOREIGN KEY (idAgendamento) REFERENCES Agendamento(id);
+
+ALTER TABLE Usuario ADD CONSTRAINT Usuario_fk0 FOREIGN KEY (idCategoria) REFERENCES Categoria(id);
+
+ALTER TABLE HigienePedido ADD CONSTRAINT HigienePedido_fk0 FOREIGN KEY (idHigiene) REFERENCES Higiene(id);
+
+ALTER TABLE AlimentoPedido ADD CONSTRAINT AlimentoPedido_fk0 FOREIGN KEY (idAlimento) REFERENCES Alimento(id);
+
+ALTER TABLE AcessorioPedido ADD CONSTRAINT AcessorioPedido_fk0 FOREIGN KEY (idAcessorio) REFERENCES Acessorio(id);
+
+ALTER TABLE SaudePedido ADD CONSTRAINT SaudePedido_fk0 FOREIGN KEY (idSaude) REFERENCES saude(id);
+
+ALTER TABLE Funcionario ADD CONSTRAINT Funcionario_fk0 FOREIGN KEY (idUsuario) REFERENCES Usuario(id);
+

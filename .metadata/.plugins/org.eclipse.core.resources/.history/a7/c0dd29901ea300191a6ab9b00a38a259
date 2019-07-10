@@ -1,0 +1,55 @@
+<%@page import="bean.Higiene"%>
+<%@page import="dao.HigieneDao"%>
+<%@page import="bean.Acessorio"%>
+<%@page import="dao.AcessorioDao"%>
+<%@page import="bean.Alimento"%>
+<%@page import="dao.AlimentoDao"%>
+<%@page import="bean.Saude"%>
+<%@page import="dao.SaudeDao"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+<%
+	String nome = request.getParameter("nome");
+	double valor = Integer.parseInt(request.getParameter("valor"));
+	String categoria = request.getParameter("categoria");
+	
+	Higiene h = new Higiene();
+	HigieneDao dao = new HigieneDao();
+	Acessorio acessorio = new Acessorio();
+	AcessorioDao acedao = new AcessorioDao();
+	Alimento alimento = new Alimento();
+	AlimentoDao alidao = new AlimentoDao();
+	Saude saude = new Saude();
+	SaudeDao saudao = new SaudeDao();
+
+	if (categoria.equals("Higiene")) {
+		h.setTipo(nome);
+		h.setPreco(valor);
+		dao.cadastrar(h);
+		response.sendRedirect("../cadastrarProduto.jsp");
+	}
+
+	else if (categoria == "Acessorio") {
+		acessorio.setAcessorio(nome);
+		acessorio.setPreco(valor);
+		acedao.cadastrar(acessorio);
+		response.sendRedirect("../cadastrarProduto.jsp");
+
+	}
+
+	else if (categoria == "Alimento") {
+
+		alimento.setTipo(nome);
+		alimento.setPreco(valor);
+		alidao.cadastrar(alimento);
+		response.sendRedirect("../cadastrarProduto.jsp");
+	}
+
+	else if (categoria == "Farmacia") {
+		saude.setTipo(nome);
+		saude.setPreco(valor);
+		saudao.cadastrar(saude);
+		response.sendRedirect("../cadastrarProduto.jsp");
+	}
+%>

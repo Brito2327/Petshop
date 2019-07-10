@@ -1,0 +1,561 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acessórios Pet</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Fotorama -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Adicionar arquivo CSS -->
+    <link href="estilos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="imagens/Logo.png" />
+                </div>
+                <div class="redes-sociais">
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Itens de navegação-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!--Dropdown-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Serviços</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Banho e tosa</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Consultas</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Produtos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Alimentação</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Higiene</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Acessórios</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Farmácia</a>
+                    </div>
+                </li>
+
+                <!--Fixos-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Cadastro <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Promoções <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Adoção <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Avaliação <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Quem somos? <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+
+            <!--Formulário de login-->
+            <form class="form-inline my-2 my-lg-0">
+                <i class="fas fa-user"></i>
+                <input class="form-control mr-sm-2" type="email" placeholder="E-mail..." name="email">
+                <input class="form-control mr-sm-2" type="password" placeholder="Senha..." name="senha">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Entrar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="fotorama" data-width="100%" data-loop="true" data-autoplay="2500" data-stopautoplayontouch="false"
+        data-transition="crossfade">
+        <img src="imagens/img1.jpg">
+        <img src="imagens/img2.jpg">
+        <img src="imagens/img3.jpg">
+    </section>
+
+    <!-- Título de produto 1 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Comedouros e Bebedouros</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Comedouro1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Bebedouro automático</h5>
+                <p class="font-weight-bold">Marca: Idealdog.</p>
+                <p>- Indicado para cães e gatos.
+                    <br>- Combina praticidade e beleza.
+                    <br>- Desenvolvido para pets que ficam sozinhos por longos períodos.
+                    <br>- Tem capacidade para 3 litros.
+                </p>
+                <br>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$37,99</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Comedouro2-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Bebedouro porta remédio</h5>
+                <p class="font-weight-bold">Marca: Mr. Pet</p>
+                <p class="card-text">Se o seu pássaro precisa tomar alguma medicação, utilizar o bebedouro pode
+                    ser a melhor forma de dar o remédio a ele. O Bebedouro com Porta Remédio Mr. Pet Passáros é
+                    ideal para a manipulação de medicamentos e transporte. Fácil fixação na gaiola e por ser de
+                    plástico a sua higienização é prática e rápida.</p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$2,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Comedouro3-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Comedouro Snoopy</h5>
+                <p class="font-weight-bold">Marca: Zooz Pets</p>
+                <p class="card-text">- Indicado para cães.
+                    <br>- Super leve e fácil de higienizar.
+                    <br>- Com antiderrapante que evita que seu pet arraste o comedouro por todo lado.
+                    <br>- Disponível nos tamanhos P, M e G.
+                </p>
+                <br>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$59,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Título de produto 2 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Transporte</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Transporte1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Caixa de transporte luxo</h5>
+                <p class="font-weight-bold">Marca: Furacão.</p>
+                <p>- Indicado para cães e gatos.
+                    <br>- Tem longa durabilidade.
+                    <br>- Fácil de carregar.
+                    <br>- Possui um sistema fechamento rápido.
+                    <br>- Disponível nos tamanhos 2 e 3.
+                </p>
+                <br>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$79,90</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Transporte2-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Bolsa Griff Dog</h5>
+                <p class="font-weight-bold">Marca: Griff Dog.</p>
+                <p class="card-text">- Indicada para cães e gatos.
+                    <br>- Ideal para os pets de pequeno e médio porte.
+                    <br>- Proporciona mais segurança e conforto aos pets.
+                    <br>- Feita de camurça.
+                    <br>- Fácil de carregar.
+                </p>
+                <br>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$102,90</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Transporte3-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Capa protetora de banco</h5>
+                <p class="font-weight-bold">Marca: Chalesco</p>
+                <p class="card-text">- Indicada para proteção de estofado de carros.
+                    <br>- Protege o banco traseiro do automóvel.
+                    <br>- Possui abertura para acesso ao cinto de segurança.
+                    <br>- Evita o acumulo de pelos no interior do veículo.
+                    <br>- Seu pet seguro e seu carro sempre protegidos durante os passeios.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$59,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Título de produto 3 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Caminhas</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Cama1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Cama M1 Urban Puppy</h5>
+                <p class="font-weight-bold">Marca: Urban Puppy.</p>
+                <p>- Indicado para cães e gatos.
+                    <br>- Enchimento removível.
+                    <br>- Fibra siliconada.
+                    <br>- Estampa exclusiva.
+                    <br>- Super confortável e quentinha.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$129,99</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Cama2-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Bolsa Pawise Bloster</h5>
+                <p class="font-weight-bold">Marca: Pawise.</p>
+                <p class="card-text">- Indicada para gatos.
+                    <br>- Super aconchegante.
+                    <br>- Design fofo.
+                    <br>- Seu amigo mais confortável na hora do descanso.
+                    <br>- Material: Poliéster.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$99,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Cama3-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Capa Siesta Deluxe</h5>
+                <p class="font-weight-bold">Marca: Ferplast</p>
+                <p class="card-text">- Indicada para cachorros e gatos.
+                    <br>- Feita de plástico resistente e antiderrapante.
+                    <br>- Conta com encosto para a cabeça do pet.
+                    <br>- Proporciona mais conforto.
+                    <br>- Disponível em 6 tamanhos.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$69,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Título de produto 4 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Casinhas, gaiolas e aquários</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Casinha1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Dogvilla</h5>
+                <p class="font-weight-bold">Marca: Ferplast.</p>
+                <p>- Indicado para cães.
+                    <br>- Proporciona mais conforto ao pet.
+                    <br>- Conta com abertura lateral que se torna uma rampa.
+                    <br>- Fácil de montar e higienizar.
+                    <br>- Disponível nos tamanhos P, M e G.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$1.431,00</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Casinha2-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Viveiro telhadinho duplex</h5>
+                <p class="font-weight-bold">Marca: Bragança.</p>
+                <p class="card-text">- Indicado para Calopsitas e pássaros semelhantes.
+                    <br>- Ideal para o conforto e qualidade de vida do seu amigo.
+                    <br>- Acompanha comedouro, aba e poleiro de madeira.
+                    <br>- Está acoplado a uma bandeja plástica.
+                    <br>- Possui rodinhas, o que facilita o transporte.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$220,00</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Casinha3-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Aquário curvo TL 550 128 litros</h5>
+                <p class="font-weight-bold">Marca: Boyu</p>
+                <p class="card-text">- Indicado para peixes.
+                    <br>- Perfeito para quem deseja ter um aquário marinho.
+                    <br>- Feito de vidro curvo.
+                    <br>- Mais segurança e espaço para seus pets.
+                    <br>- Disponível em 110V e 220V.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$3.620,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Título de produto 5 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Coleiras</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Coleira1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Guia Flippy Regular</h5>
+                <p class="font-weight-bold">Marca: Ferplast.</p>
+                <p>- Indicado para cães.
+                    <br>- Guia automática retrátil.
+                    <br>- Proporciona mais segurança e liberdade durante o passeio.
+                    <br>- O fio pode ser extenso até 5 metros.
+                    <br>- Modelo ergonômico e moderno.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$69,99</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Coleira2-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Peitoral Cat Neo Tattoo Marinheiro</h5>
+                <p class="font-weight-bold">Marca: Tchucoo.</p>
+                <p class="card-text">- Indicado para gatos.
+                    <br>- Regulável e super seguro.
+                    <br>- Fitas em poliéster antialérgico macias e confortáveis.
+                    <br>- Estampas exclusivas.
+                    <br>- Argolas em metal e fecho em nylon.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$92,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Coleira3-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Peitoral Agila Fluo</h5>
+                <p class="font-weight-bold">Marca: Ferplast</p>
+                <p class="card-text">- Indicado para cães.
+                    <br>- Possui ótimo caimento e máximo conforto.
+                    <br>- Oferece maior segurança para seu bichinho.
+                    <br>- Ajustável ao corpo do pet.
+                    <br>- Muito confortável e durável.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$139,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Título de produto 6 -->
+    <div class="menu-produto">
+        <br>
+        <H3>Roupinhas</H3>
+    </div>
+
+    <!-- Adicionar produtos -->
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="imagens/Roupinha1-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casaco com Capuz</h5>
+                <p class="font-weight-bold">Marca: Urban Puppy.</p>
+                <p>- Indicado para cães.
+                    <br>- Estampa exclusiva.
+                    <br>- Modelagem ergonômica.
+                    <br>- Proporciona maior liberdade de movimentos.
+                    <br>- Disponível nos tamanhos 10, 12, 14.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$91,99</h5>
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Roupinha2-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casaco Moletom para Cachorro</h5>
+                <p class="font-weight-bold">Marca: Urban Puppy.</p>
+                <p class="card-text">- Casaco Moletom para Cachorro Mescla Azul Marinho e Cinza Urban Puppy
+                    possui estampa em silk confeccionado em tecido 97% algodão e 3% de poliéster. É confortável
+                    e quentinho seu cachorrinho vai ficar protegido e estiloso nos dias mais frios.
+                    <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$64,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="imagens/Roupinha3-01.png" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Casaco Plush</h5>
+                <p class="font-weight-bold">Marca: Urban Puppy</p>
+                <p class="card-text">- Indicado para cães.
+                    <br>- Proporciona maior liberdade de movimentos.
+                    <br>- Estiloso e confortável.
+                    <br>- Proporciona maior liberdade de movimentos.
+                    <br>- Disponível nos tamanhos 10, 12, 14, 16 e 18.
+                </p>
+                <h5 class="font-weight-bold" style="color: rgb(195, 93, 36)">R$85,99</h5>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!--Redes sociais-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Siga nossos perfis</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <!--Rodapé-->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="imagens/Logo.png">
+                    <hr class="light-1">
+                    <p>47-3456-9877</p>
+                    <p>pegasus.pet@gmail.com</p>
+                    <p>121, Antônio da Veiga</p>
+                    <p>Blumenau - SC</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light-2">
+                    <h5>Atendimento</h5>
+                    <hr class="light-3">
+                    <p>Segunda à sexta: 24 hrs</p>
+                    <p>Sábados: 8 às 20 hrs</p>
+                    <p>Domingos: Fechado</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light-4">
+                    <h5>Trabalhe conosco</h5>
+                    <hr class="light-5">
+                    <p>Não há vagas disponíveis no momento.</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-6">
+                    <h5>&copy; pegasus.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<%@page import="bean.Higiene" %>
+<%@page import="dao.HigieneDao" %>
+<%@page import="bean.Acessorio" %>
+<%@page import="dao.AcessorioDao" %>
+<%@page import="bean.Alimento" %>
+<%@page import="dao.AlimentoDao" %>
+<%@page import="bean.Saude" %>
+<%@page import="dao.SaudeDao" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<%
+	String nome = request.getParameter("nome");
+	double valor = Integer.parseInt(request.getParameter("valor"));
+	String categoria=request.getParameter("categoria");
+	
+if(categoria=="Higiene"){
+	
+	Higiene h =  new  Higiene(nome,valor);
+	
+	
+	HigieneDao dao =  new HigieneDao();
+	
+	dao.cadastrar(h);
+	
+}
+
+else if(categoria=="Acessorio"){
+	
+	Acessorio h =  new  Acessorio("osso",5.0);
+	
+	
+	AcessorioDao dao =  new AcessorioDao();
+	dao.cadastrar(h);
+	
+}
+
+else if (categoria == "Alimento") {
+
+		Alimento h = new Alimento(nome,valor);
+		
+		AlimentoDao dao = new AlimentoDao();
+
+		dao.cadastrar(h);
+	}
+
+else if (categoria == "Farmacia") {
+
+		Saude h = new Saude(nome,valor);
+		h.setTipo(nome);
+		h.setPreco(valor);
+
+		SaudeDao dao = new SaudeDao();
+
+		dao.cadastrar(h);
+	}
+	
+	response.sendRedirect("../cadastrarProduto.jsp");
+%>
